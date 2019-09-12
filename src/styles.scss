@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+  
+@import '../node_modules/normalize.scss/normalize';
+@import '../node_modules/sass-toolkit/stylesheets/toolkit/kickstart';
+@import '../node_modules/breakpoint-sass/stylesheets/_breakpoint.scss';
+@import "~font-awesome/css/font-awesome.css";
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+body {
+  font-size: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 22px;
+}
+.orange-btn {
+  background-color: #da3911;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 25px;
+  flex: 1 0 140px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #da3911;
+  top: 5px;
+}
+.orange-btn img {
+  width: 17px;
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+}
+.social-btn {
+  display: inline-block;
+  margin-right: 3px;
+}
+.social-btn img {
+  width: 20px;
+  height: 18px;
+  border-radius: 4px;
+  position: relative;
+  top: 5px;
+}
+
+.is-expanded {
+  max-height: 500px !important;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.fade-out {
+  opacity: 0 !important;
+}
+
+

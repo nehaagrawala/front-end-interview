@@ -1,0 +1,91 @@
+<div id="header" #header class="header-container is-collapsed">
+  <div class="hamburger-logo-container">
+      <div id="nav-hamburger" #navHamburger (click)="sideNavClick()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <img class="company-logo" src="assets/images/company-logo.png" alt="Company Logo">
+  </div>
+  <div class="navbar-container">
+    <ul>
+      <li>
+        <a class="nav-links is-active" href="#">About</a>
+      </li>
+      <li>
+        <a class="nav-links" href="#">Services</a>
+      </li>
+      <li>
+        <a class="nav-links" href="#">Solutions</a>
+      </li>
+      <li>
+        <a class="nav-links" href="#">Blog</a>
+      </li>
+    </ul>
+    <a class="orange-btn" href="#">
+      <img src="assets/images/chat-icon.png">
+      Get in Touch
+    </a>
+  </div>
+</div>
+<div class="about-container">
+  <div class="featured-services">
+    <h3>Integer bibendum sit admen forem acu vel opiu nhj</h3>
+    <div class="about-service-container">
+      <div class="about-service" *ngFor="let data of serviceArray">
+        <img src={{data.service_icon}} alt="">
+        <h5>{{data.service_name}}</h5>
+      </div>
+    </div>
+  </div>
+  <div class="about-section2">
+    <div class="about-section2-info">
+      <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s. </h3>
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+        literature
+        from 45 BC, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going
+        through
+        the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from
+        sections
+        1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"</p>
+    </div>
+    <img class="world-map-image" src="assets/images/world-map.jpg" alt="world map">
+  </div>
+  <div class="testimonials-container">
+    <h3>Testimonials</h3>
+    <div class="single-testimonial" *ngFor="let data of testimonialsArray">
+      <div class="content-block">
+        <p>{{data.content}}</p>
+      </div>
+      <div class="client-info">
+        <img src={{data.client_avatar}} alt={{data.client_name}}>
+        <div class="client-name-block">
+          <h6 class="client-name">{{data.client_name}}</h6>
+          <p class="client-position">{{data.client_position}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="get-client-info-container">
+  <h3>Convinced to work with us?</h3>
+  <p>Company has helped agencies keep their promises to clients since 2005</p>
+  <form action="">
+      <input type="text" placeholder="Fullname">
+      <input type="email" placeholder="Email Address">
+      <input type="text" placeholder="Phone Number">
+      <textarea type="text" placeholder="Message in brief"></textarea>
+      <button class="orange-btn">Submit</button>
+  </form>
+</div>
+
+<div class="footer-container">
+  <p class="copyright-text">&copy; 2017 Company. All Rights Reserved</p>
+  <div class="social-buttons-container">
+      Follow us on:
+      <a *ngFor="let data of socialLinkArray" class="social-btn" href="#" >
+        <img src={{data.social_icon}} alt={{data.social_name}}>
+      </a>
+  </div>
+</div>
